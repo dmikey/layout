@@ -1,23 +1,18 @@
 (function (enyo, scope) {
-	/**
-	* {@link enyo.LeftRightArranger} is an {@link enyo.Arranger} that displays
-	* the active control and some of the previous and next controls. The active
-	* control is centered horizontally in the container, and the previous and next
-	* controls are laid out to the left and right, respectively.
-	*
-	* Transitions between arrangements are handled by sliding the new control in
-	* from the right and sliding the active control out to the left.
-	*
-	* For more information, see the documentation on
-	* [Arrangers]{@linkplain $dev-guide/building-apps/layout/arrangers.html} in the
-	* Enyo Developer Guide.
-	*
-	* @class  enyo.LeftRightArranger
-	* @extends enyo.Arranger
-	* @public
-	*/
 	enyo.kind(
 		/** @lends enyo.LeftRightArranger.prototype */ {
+		/**
+			_enyo.LeftRightArranger_ is an [enyo.Arranger](#enyo.Arranger) that displays
+			the active control and some of the previous and next controls. The active
+			control is centered horizontally in the container, and the previous and next
+			controls are laid out to the left and right, respectively.
+
+			Transitions between arrangements are handled by sliding the new control in
+			from the right and sliding the active control out to the left.
+
+			For more information, see the documentation on
+			[Arrangers](building-apps/layout/arrangers.html) in the Enyo Developer Guide.
+		*/
 
 		/**
 		* @private
