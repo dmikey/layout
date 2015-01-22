@@ -117,7 +117,7 @@
 				var o = Math.floor(c$.length/2);
 				var wf = (s === 0 && f == (c$.length-1));
 				var wb = (s == (c$.length-1) && f === 0);
-		        var w = !wb ? wf ? wf : s > f : !wb;
+				var w = !wb && (wf || s > f);
 
 				for (var i=0, c; (c=c$[i]); i++) {
 					if (w){
