@@ -115,8 +115,8 @@
 				var f = this.container.toIndex;
 				var c$ = this.getOrderedControls(f);
 				var o = Math.floor(c$.length/2);
-				var wf = !(s == (c$.length-1) && f === 0) && (s === 0 && f == (c$.length-1));
-		        var wb = (s == (c$.length-1) && f === 0) && !(s === 0 && f == (c$.length-1));
+				var wf = (s === 0 && f == (c$.length-1));
+				var wb = (s == (c$.length-1) && f === 0);
 		        var w = !wb ? wf ? wf : s > f : !wb;
 
 				for (var i=0, c; (c=c$[i]); i++) {
