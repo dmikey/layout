@@ -120,9 +120,10 @@
 				var f = this.container.toIndex;
 				var c$ = this.getOrderedControls(f);
 				var o = Math.floor(c$.length/2);
+				var w = !(s == (c$.length-1) && f == 0) || (s == 0 && f == (c$.length-1));
 
 				for (var i=0, c; (c=c$[i]); i++) {
-					if (s > f){
+					if (s > f & w){
 						if (i == (c$.length - o)){
 							c.applyStyle('z-index', 0);
 						} else {
